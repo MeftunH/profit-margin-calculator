@@ -8,7 +8,7 @@ function App() {
             <div className="mx-auto max-w-2xl sm:text-center">
                 {/*TODO: color switch*/}
             </div>
-            <h2 className="">Profit Margin Calculator</h2>
+            <h2 className="text-brand text-3xl">Profit Margin Calculator</h2>
         </div>
      </main>
   )
