@@ -1,34 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
+     <main className="bg-white dark:bg-black relative">
+        <div className="py-24 sm:py-32">
+            <div className="mx-auto max-w-7xl px-4 lg:px-0">
+                {/*TODO: theme switch*/}
+            </div>
+            <div className="mx-auto max-w-2xl sm:text-center">
+                {/*TODO: color switch*/}
+            </div>
+            <h2 className="">Profit Margin Calculator</h2>
+        </div>
+     </main>
   )
 }
 
