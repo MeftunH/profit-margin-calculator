@@ -1,4 +1,13 @@
+import React, {useEffect, useState} from "react";
 function ThemeSwitcher() {
+    const [mounted, setMounted] = useState(false)
+    const [isDark, setIsDark] = useState<boolean | undefined>(undefined)
+
+    useEffect(() => {
+        setMounted(true)
+        setIsDark(document.documentElement.classList.contains('dark'));
+    }, [])
+
     return (
         <div className="absolute top-10 right-10">
             <button className="text-grey-500 dark:text-gray-400 hover:bg-gray-100
