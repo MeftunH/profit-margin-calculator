@@ -12,3 +12,6 @@ export function format(value: any, currency: string | undefined) {
 
     return formattedValue.toLocaleString();
 }
+export function isNumber(value: any) {
+    return isNaN(Number(value));
+}
