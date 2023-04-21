@@ -15,3 +15,6 @@ export function format(value: any, currency: string | undefined) {
 export function isNumber(value: any) {
     return isNaN(Number(value));
 }
+export function isEmpty(value: any) {
+    return value === "" || value === undefined || value === null;
+}
