@@ -35,6 +35,16 @@ interface FormState {
     errors: Errors;
 }
 
+const initialFormState: FormState = {
+    salePrice: 0,
+    profit: 0,
+    grossMargin: 0,
+    currency: "USD",
+    errors: {
+        costOfItem: null,
+        markup: null,
+    },
+};
 
 export type { TextFieldProps, CurrencyProps, OutcomeProps, FormState, Errors };
 export { initialFormState };
